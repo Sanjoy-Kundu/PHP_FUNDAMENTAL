@@ -40,9 +40,9 @@
 
 <!-----------PHP Heading-------------->
 <h1 class="text-center text-info">PHP Basic Course </h1>
-<div>
-	<h1>PHP FUNDAMENTAL OUTLINE</h1>
-	<ul>
+<div class="border border-info w-75 mx-auto bg-info rounded">
+	<h1 class="text-center text-white mb-5">PHP FUNDAMENTAL OUTLINE</h1>
+	<ol>
 		<li>comment</li>
 		<li>variable</li>
 		<li>echo/ print</li>
@@ -59,7 +59,68 @@
 		<li>function</li>
 		<li>Array</li>
 		<li>super global</li>
-	</ul>
+	</ol>
+</div>
+
+<!------------php comment------------>
+<div class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 mt-3 ">
+	<!--------php comment--------->
+<div class="card bg-warning " >
+  <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body">
+	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
+	<p>we can write single line comment using (//code ....) double slash.
+		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+  </div>
+</div>
+
+<!----------php variable-------->
+<div class="card bg-warning" >
+  <img src="images/variable.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body mt-4">
+	  <h4><span class="text-danger">Variable</span>($any name) </h4>
+	<p>variable start with $ we can write variable using $anyName</p>
+	<h3>$name = "Hello Bro"; <br> echo $name</h3>
+  </div>
+</div>
+
+<!---------------php echo / print----------------->
+<div class="card bg-warning">
+  <img src="images/echo-print.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body">
+	  <h4><span class="text-danger">Echo</span>/ Print </h4>
+	<p>echo can take two or more variable or variable value. On the other hand print can take one or single value or variable</p>
+	<h3><span class="text-danger">Echo</span> "My name is sanjoy","Im form Banglasesh"</h3>
+	<h3><span class="text-danger">Print </span>can take single variable or value</h3>
+  </div>
+</div>
+<div class="card bg-warning" >
+  <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body">
+	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
+	<p>we can write single line comment using (//code ....) double slash.
+		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+  </div>
+</div>
+<div class="card bg-warning" >
+  <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body">
+	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
+	<p>we can write single line comment using (//code ....) double slash.
+		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+  </div>
+</div>
+<div class="card bg-warning" >
+  <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
+  <div class="card-body">
+	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
+	<p>we can write single line comment using (//code ....) double slash.
+		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+  </div>
+</div>
+
+<!---------------------------->
+
 </div>
 
 
