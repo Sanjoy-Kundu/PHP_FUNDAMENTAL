@@ -94,28 +94,51 @@
 	<h3><span class="text-danger">Print </span>can take single variable or value</h3>
   </div>
 </div>
+<!----------data type -------------->
 <div class="card bg-warning" >
   <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
   <div class="card-body">
-	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
-	<p>we can write single line comment using (//code ....) double slash.
-		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+	  <h4><span class="text-danger">Data Type</span> </h4>
+	<ol>
+		<li>String:  echo "I love php"; </li>
+		<li>Integer menas fullNumber forExample 10, 20, 50;</li>
+		<li>Integer: $a = 10; echo $a;</li>
+		<li>Float: $a = 10.6; echo $a</li>
+		<li>Boolean: $a = true; echo $a</li>
+		<li>Array: $name = array("Rahim", "Karim","Simul"); var_dump($name)</li>
+		<li>Object :  class className{ function functionNameOne() { return "Hello php"}; function functionNameTwo() {echo $this -> functionNameOne}} $anyName = new className(); $anyName ->functionNameTwo();</li>
+		<li>Null: $dream = null; var_dump($dream)</li>
+
+	</ol>
   </div>
 </div>
 <div class="card bg-warning" >
   <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
   <div class="card-body">
-	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
-	<p>we can write single line comment using (//code ....) double slash.
-		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+	  <h4><span class="text-danger">Components</span> </h4>
+	<p>components are start with with define()function <strong>Syntax:</strong>define("name", "value", case-sensitive) <br>
+	<b>Example</b> Syntax: define("Madaripur", "Sayed Abul Hossain College", true); <br>
+	echo Madaripur;
+</p>
+<b><mark>const using global</mark> <br>
+		<span>define("name", "Sanjoy Kundu", true)</span> <br>
+		<span>function  functionName(){ return name;} functionName()</span>
+</b>
   </div>
 </div>
 <div class="card bg-warning" >
   <img src="images/comment.jpg" class="card-img-top w-100" alt="..." >
   <div class="card-body">
-	  <h4><span class="text-danger">Commnet</span>(/* code .........*/) </h4>
-	<p>we can write single line comment using (//code ....) double slash.
-		we can write multiple line code using start with(slash start/* ) end with (slash star */) </p>
+	  <h4><span class="text-danger">Operator</span> </h4>
+	<ol>
+		<li>Arithmetic Operator (+, - , * /, %, **)</li>
+		<li>Assignment Operator(+=, -=, *=, /=, *=, *==, %=)</li>
+		<li>Comparison Operator(==, ===, !=, !==, <, >. >=, =<)</li>
+		<li>Increment or Decrement (++, --)</li>
+		<li>Logical Operator(and &&, or||, !, xor)</li>
+		<li>String Operator</li>
+		<li>Array Operator</li>
+	</ol>
   </div>
 </div>
 
