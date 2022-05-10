@@ -205,17 +205,51 @@
   <!-----------------Comparison Operator-------------->
   <div class="bg-info p-2 mt-5">
 	  <h5 class="text-secondary text-center">Comparison Operator</h5>
-	  <div></div>
+	  <div class="bg-primary text-white">
+		  $x = 10; <br>
+		  $y = 40; <br>
+		  var_dump($x == $y) <br>
+		  output is false <br>
+		  <hr>
+		  <br>
+		  $x = 20; <br>
+		  $y = 40; <br>
+		  var_dump($x !== $y); <br>
+		  output is false; <br>
+		  <hr>
+		  <br>
+		  $x = 50; <br>
+		  $y = 40; <br>
+		  var_dump($x > $y); <br>
+		  output is true <br>
+		  <hr>
+		  <br>
+		  $x = 50; <br>
+		  $y = 40; <br>
+		  var_dump($x < $y); <br>
+		  output is false <br>
+		  <hr>
+		  <br>
+	</div>
+	</div>
+		<!-------------- increment or decrement ----------------->
+		<div>
+			
+		</div>
+	</div>
 
-  </div>
+
 
 </div>
 
 
+<?php
+	$x = 10;
+	$y = 40;
+	echo var_dump($x == $y);
 
-</div>
 
-
+?>
 
 
 
