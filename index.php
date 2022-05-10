@@ -278,9 +278,73 @@
 				output is 20; <br>
 				<hr>
 				<br>
+		</div>
+		</div>
+		<!-------------- Logical Operator------------->
+		<div class="bg-success mt-3 ">
+			<h5 class="text-center text-white">Logical Operator(and, or, not, xor)<h5>
+			<div class="text-white">
+				$a = 40; <br>
+				$b = 20; <br>
+				if($a ==40 && $b ==20){ <br>
+					echo  "You are pass"; <br>
+				}else{ <br>
+					echo "You are fail" <br>
+				} <br>
+				output You are pass <br>
+				<hr>
+				 <br>
+			$c = 100; <br>
+			$d = 90; <br>
+			if($c !== $d){ <br>
+				echo "Your  result doesn't match"; <br>
+			} <br>
+			else{ <br>
+				echo "You are pass"; <br>
+			} <br>
+			output is Your result is doesnt match; <br> <hr> <br>
+			<P>xor define that when we can see our result is true then we will be gate false value other wise when result will be false will be true then we will be get true value </P>
+			$a = 100; <br>
+			$b = 30; <br>
+			if($a ==200 b== 30){ <br>
+				echo "You are write"; <br>
+			} <br>
+			else{<br/>
+			echo "You are wrong"; <br>
+			} <br>
+			output is you are wite; <br>
+			<hr>
+			<br>
+		</div>
+		</div>
+		<!------------ string ------------>
+		<div class="bg-info mt-3 ">
+		<h4 class="text-center text-white">String Operator</h4>
+		<div>
+			<h4>Concatination with string</h4>
+			$name = "I am Sanjoy Kundu"; <br>
+			$form = "Im form Bangladesh"; <br>
+			echo $name .$form; <br>
+			output is i am Sanjoy Kundu. Im form Bangladesh; <br> 
+			<hr>
+			<br>
+			<h6>Concatination Assignment Operator </h6>
+			$name = "HM Milon"; <br>
+			$Occupation = "Student"; <br>
+			$name .= $Occupation; <br>
+			echo $name; <br>
+			output is HM Milon Student <br>
+			<hr>
+			 <br>
 
+		</div>
+		</div>
 
-
+		<!----------------Array Operator--------------->
+		<div>
+			<h4 class="text-center text-primary">Array Operator</h4>
+			
+			<div>
 
 			</div>
 		</div>
@@ -295,10 +359,9 @@
 
 
 <?php
-	$x = 10;
-	$y = 40;
-	echo var_dump($x == $y);
-
+$name = "Sanjoy Kundu";
+$form = " im form Bangladesh";
+echo $name . $form;
 
 ?>
 
