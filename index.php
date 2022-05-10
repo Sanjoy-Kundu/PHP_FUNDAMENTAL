@@ -203,9 +203,9 @@
  </div>
   </div>
   <!-----------------Comparison Operator-------------->
-  <div class="bg-info p-2 mt-5">
-	  <h5 class="text-secondary text-center">Comparison Operator</h5>
-	  <div class="bg-primary text-white">
+  <div class="bg-primary p-2 mt-5">
+	  <h5 class="text-white text-center">Comparison Operator</h5>
+	  <div class=" text-white p-2">
 		  $x = 10; <br>
 		  $y = 40; <br>
 		  var_dump($x == $y) <br>
@@ -233,6 +233,57 @@
 	</div>
 	</div>
 		<!-------------- increment or decrement ----------------->
+		<div class="bg-info mt-3">
+			<h5 class="text-center text-white">Increment and Decrement</h5>
+			<div>
+				There are two type of increment. there are  
+				<ol>
+					<li>pre Increment(++$variable)</li>
+					<li>post decrement(--$variable)</li>
+				</ol>
+				<ol>
+					<li>post Increment ($variable++)</li>
+					<li>post decrement ($variable--)</li>
+				</ol>
+				<br>
+				<hr>
+				<br>
+				<h4>Pre increment($var ++)</h4>
+				$number1 = 40; <br>
+				$number2 = 50; <br>
+				$increment = ++$number1; <br>
+				echo $increment; <br>
+				output is 41; <br> <br>
+				<hr>
+				<h4>Pre decrement($var --)</h4>
+				$number1 = 40;  <br>
+				$pre_decrement = --$number1; <br>
+				echo $pre_decrement; <br>
+				output is  39; <br>
+
+				<hr>
+				<br>
+				<h4>Post Increment (++$var)</h4>
+				<p>post increment first return variable value then added 1 by 1</p>
+				$number1 = 10; <br>
+				$post_increment = $number1 ++; <br>
+				echo $post_increment; <br>
+				output is 10; <br>
+				<hr>
+				<h4>Post decrement (-- $var)</h4>
+				<p>post decrement first return present variable and then decrease the value form present value</p>
+				$number2 = 20; <br>
+				$post_decrement = --$number2; <br>
+				echo $post_decrement; <br>
+				output is 20; <br>
+				<hr>
+				<br>
+
+
+
+
+			</div>
+		</div>
 		<div>
 			
 		</div>
