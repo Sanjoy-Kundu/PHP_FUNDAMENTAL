@@ -139,10 +139,79 @@
 		<li>String Operator</li>
 		<li>Array Operator</li>
 	</ol>
+	<div class="bg-info p-2 w-100">
+		<h5 class="text-danger text-center">Arithmetic Operator</h5>
+		<div class="mt-2">
+			$a = 10; <br>
+			$b = 30; <br>
+			$add = $a + $b; <br>
+			$sub = $a - $b; <br>
+			$multi = $a * $b; <br>
+			$divi= $b / $a; <br>
+			$modulas = $b % $a; <br>
+			$expon = $a ** $b; <br>
+			<mark>echo $add output is 40</mark><br> <br>
+			<mark>echo $sub output is 20</mark> <br> <br>
+			<mark> echo $multi output is 300</mark> <br> <br>
+			<mark> echo $divi output is 3</mark> <br> <br>
+			<mark> echo $modulus output is 0 </mark> <br> <br>
+			<mark> echo $expon output is 10<sup>30</sup> </mark> <br> <br>
+		</div>
+	</div>
   </div>
+  <!-----------Assignment Operator-------->
+  <div class="bg-primary text-white p-2 mt-5">
+	  <h5 class="text-warning text-center">Assignment Operator</h5>
+	  <div>
+		  $add= 20; <br>
+		  $sub = 50;  <br>
+		  $multi = 10; <br>
+		  $div = 40; <br>
+		  $expon = 3; <br>
+		  $modu = 10; <br>
+		  <br>
+		  <hr>
+		  $add += 10; <br>
+		  echo $add; <br>
+		  ouput = 20+ 10 = 30; <br>
+		  <hr>
+		  <br>
+		  $sub -= 10; <br>
+		  echo $sub; <br>
+		  oupu  is = 50 - 10 = 40 <br>
+		  <hr>
+		  <br>
+		  $multi *= 10; <br>
+		  echo $multi; <br>
+		  output is 10 * 10 = 100 <br>
+		  <hr>
+		  <br>
+		  $div /= 10; <br>
+		  echo $div; <br>
+		  output is = 40 /10 = 4; <br>
+		  <hr>
+		  <br>
+		  $expon **= 3; <br>
+		  echo $expon; <br>
+		  output is 3 *3 *3 = 27; <br>
+		  <hr>
+		  <br>
+		  $mdou = %= 5; <br>
+		  echo $modu; <br>
+		  output = 10/5 = 0; <br>
+		  <hr>  <br>
+ </div>
+  </div>
+  <!-----------------Comparison Operator-------------->
+  <div class="bg-info p-2 mt-5">
+	  <h5 class="text-secondary text-center">Comparison Operator</h5>
+	  <div></div>
+
+  </div>
+
 </div>
 
-<!---------------------------->
+
 
 </div>
 
