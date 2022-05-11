@@ -459,6 +459,43 @@
 						<br>
 			</div>
 		</div>
+		<!----------------While loop-------------->
+		<div class="bg-danger mt-3">
+			<h5 class="text-center"> While Loop</h5>
+			<div class="p-3 text-white" >
+			first set initial value  <br/>
+			then write while condition <br>
+			and then echo and set increment or decrement value; <br>
+				$a = 2; <br>
+				while($a <= 10){ <br/>
+					echo "The number is ".$a; <br>
+					$a++; <br>
+				} <br>
+				<b>Output is 1 to 10</b>
+				<br>
+				 <hr>
+				 <!---------for loop----------->
+				 <h5 class="text-center">For Loop</h5>
+				 <div class="bg-primary p-3">
+					 for($i = 0; $i <= 10; $i++){ <br/>
+						echo "The number is ". $i; <br>
+					}
+				 </div>
+				 <!--------foreach loop----------->
+				 <div class="bg-info mt-3">
+					 <h5>Foreach loop</h5>
+					 <p>Foreach fuction use only array </p>
+					 <div class="p-3">
+						 $names = array("sumon", "kiron", "mala", "Rifat"); <br>
+						 foreach($names as $name){ <br>
+							echo "My name is ".$name.'<>' ; <br>
+						}
+					 </div>
+				 </div>
+			</div>
+		</div>
+
+		<!-------------function-------------->
 
 
 
@@ -476,23 +513,6 @@
 	</div>
 </div>
 
-<?php
-$favcolor = "red";
-
-switch ($favcolor) {
-  case "red":
-    echo "Your favorite color is red!";
-    break;
-  case "blue":
-    echo "Your favorite color is blue!";
-    break;
-  case "green":
-    echo "Your favorite color is green!";
-    break;
-  default:
-    echo "Your favorite color is neither red, blue, nor green!";
-}
-?>
 
 <?php 
 	$favTeam = "Bangladesh";
@@ -511,6 +531,30 @@ switch ($favcolor) {
 
 			default :
 			echo "You dont like Cricket";
+	}
+
+?>
+
+<?php 
+	$a = 1;
+	while($a <= 10){
+		echo "The number is ".$a.'<br/>';
+		$a++;
+	}
+
+?>
+
+<?php 
+	for($i = 0; $i<= 10; $i++){
+		echo $i.'<br/>'; 
+	}
+
+?>
+
+<?php 
+	$names = array("sumon", "kiron", "mala", "emon");
+	foreach($names as $name){
+		echo "My name is ".$name.'<br/>';
 	}
 
 ?>
