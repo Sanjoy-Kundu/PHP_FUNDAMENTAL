@@ -496,6 +496,44 @@
 		</div>
 
 		<!-------------function-------------->
+		<div class="bg-info mt-3 p-3">
+			<h5 class="text-center">Function</h5>
+			<div>
+					function functionName(){ <br>
+						echo "My function code is running"; <br>
+					} <br>
+					functionName(); <br>
+					<b>Output : My function running</b>
+					<hr>
+				<h4 class="text-center">function with parameter</h4>
+				function functionName($name){ <br>
+					echo "My name is".$name; <br>
+				} <br>
+				functionName("Sanjoy"); <br>
+				functionName("Sumon"); <br>
+				functionName("Ridoy"); <br>
+				<b>Output My name is Sanjoy</b> <br>
+				<b>Output My name is Sumon</b> <br>
+				<b>Output My name is Ridoy</b> <br>
+				<hr>
+				<br>
+				<h5>Function By Default Parameter</h5>
+				function functionName($color = "Purple"){ <br>
+					echo "My favourite color is  ".$color; <br>
+				} <br>
+				functionName("Black"); <br>
+				functionName("Blue"); <br>
+				functionName("Orange"); <br>
+				<mark>	functionName(); </mark><br>
+				<b>Output: My favourite color is Back </b> <br>
+				<b>Output: My favourite color is Blue </b> <br>
+				<b>Output: My favourite color is Orange</b> <br>
+				<b>Output: My favourite color is Purple </b> <br>
+				<hr> 
+				<br>
+
+			</div>
+		</div>
 
 
 
@@ -513,7 +551,7 @@
 	</div>
 </div>
 
-
+<h2>Switch</h2>
 <?php 
 	$favTeam = "Bangladesh";
 	switch($favTeam){
@@ -534,7 +572,7 @@
 	}
 
 ?>
-
+<h2>while loop</h2>
 <?php 
 	$a = 1;
 	while($a <= 10){
@@ -543,19 +581,51 @@
 	}
 
 ?>
-
+<h2>for loop</h2>
 <?php 
 	for($i = 0; $i<= 10; $i++){
 		echo $i.'<br/>'; 
 	}
 
 ?>
-
+<h2>Array with foreach loop</h2>
 <?php 
 	$names = array("sumon", "kiron", "mala", "emon");
 	foreach($names as $name){
 		echo "My name is ".$name.'<br/>';
 	}
+
+?> 
+<h2>function </h2>
+
+<!-------function--------->
+<?php 
+function functionName(){
+	echo "<strong>My function code is working</strong>";
+}
+functionName();
+?>
+<h2>function with name</h2>
+<?php
+	function school($name){
+		echo "The name of my school is ".$name.'<br/>';
+	}
+	school("Kulpaddi High School");
+	school("Govt UI High School");
+	school("Govt PK High School");
+	school("Donovan High School");
+
+
+?>
+<h2>Function with by default parameter</h2>
+<?php 
+	function favColor($color ="Purple"){
+		echo "My favourite color is ".$color.'<br/>'; 
+	}
+	favColor("black");
+	favColor("orange");
+	favColor();
+	favColor("Red");
 
 ?>
 
