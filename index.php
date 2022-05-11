@@ -341,16 +341,97 @@
 		</div>
 
 		<!----------------Array Operator--------------->
-		<div>
+		<div class="bg-primary mt-3">
 			<h4 class="text-center text-primary">Array Operator</h4>
-			
-			<div>
+			<p>Array are written with key and vaue , key and value are written into <div class="text-white p-3">
+			string with this sign (=>)</p>
+			<mark>Sytax: ("key" => "value")</mark> <br>
+			$country = array ( <br>
+				"name" => "Bangladesh", <br>
+				"capital" => "Dhaka", <br>
+				"Religion" => "Hindu, Muslim" <br>
+			); <br>
+			$country2 = array( <br>
+				"name" => "India", <br>
+				"capital" => "Delli" <br>
+			); <br>
+			var_dump($country + $country2); <br>
+			<br> <hr>
+			</div> 
+		</div>
 
-			</div>
+		<div class="bg-info p-1 mt-3">
+			<!-----------Indential Operator --------->
+			<h4 class="text-white text-center">Indential Operator (===)</h4>
+			<div >
+			$a = array( <br>
+			"country" = "Bangladesh", <br>
+			"capital" = "Dhaka" <br>
+			);
+			$b = array( <br>
+			"country" => "Bangladesh",
+			"capital" => "Dhaka"	 
+			); <br>
+			$var_dump($a === $b) <br>
+			<b>Result will be show True </b> <br>
+			cause variable $a and variable $b all value is same , <br>
+			if value is diffenent then output is false; <br>
+			<hr>
+			<br>
+			<h5 class="text-center ">Different Value </h5>
+			$e = array( <br>
+			"color" = "Blue", <br>
+			"address" = "Dhaka" <br>
+			); <br>
+			$f = array( <br>
+			 "color" = "red", <br>
+			 "address" = "Madaripur" <br>
+			  ) <br>
+			  var_dump($e === $f); <br>
+			  Result will be false cause var $e and $var f  value are not same; <br>
+			  <hr>
+			  <h4>Not Indential Operator (!==)</h4>
+			  $g = array( <br>
+			 	"a" = "apple" <br> 
+			  ); <br>
+			  $h = array( <br>
+			 	$b = "Banana" <br> 
+			  ); <br>
+			  var_dump($g !== $h); <br>
+			  <b>Output is true</b> caus variable $g and variable $y are not same value; <br>
+			  <hr>
 		</div>
-		<div>
-			
-		</div>
+</div>
+<div class="bg-primary mt-4 p-2">
+	<h5 class="text-center">Conditional Statement</h5>
+	<div class="text-white">
+		<h5>if and else</h5>
+		$x = 10; <br>
+		if($x > 20) { <br>
+		echo "10 is bigger this 20"; <br>
+		} <br>
+		else{ <br>
+		echo "10 is smaller than 20"; <br>
+		} <br>
+		<b>Ouptu is 10 is smaller than 20</b> <br>
+		<hr> <hr>
+		<h5 class="text-center">if , else and elseif</h5>
+		$number = 50; <br>
+		if($number > 60){ <br>
+			echo "50 is bigger than 60"; <br>
+		} <br>
+		elseif($number > 70){ <br>
+		echo "50 is bigger than 70" <br>
+		} <br>
+		else{ <br>
+		echo "50 is smaller than 60 and 70"; <br>
+		} <br>
+		<b>Output is 50 is smaller than 60 and 70</b> <br>
+		<hr>
+
+	</div>
+</div>
+		
 	</div>
 
 
@@ -359,9 +440,18 @@
 
 
 <?php
-$name = "Sanjoy Kundu";
-$form = " im form Bangladesh";
-echo $name . $form;
+$countryOne = array(
+	"name" => "Bangladesh",
+	"capital" => "dhaka"
+);
+$countryTwo = array(
+	"name" => "Bangladesh",
+	"capital" => "dhaka"
+);
+var_dump($countryOne === $countryTwo);
+
+
+
 
 ?>
 
