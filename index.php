@@ -431,30 +431,89 @@
 
 	</div>
 </div>
+<!---------- switch ------------->
+		<div class="bg-info mt-3 p-3">
+			<h5 class="text-center text-white">switch</h5>
+			<div>
+				$favteam = "Bangladesh"; <br>
+				switch($favTeam){ <br>
+					case "Bangladesh": <br>
+					echo "Your favoureite team is Bangladesh"; <br>
+					break; <br>
+					<br>
+					
+					case "India" : <br>
+					echo "Your favourite team is India"; <br>
+					break; <br>
+					<br>
+					case "Australia" : <br>
+						echo "Your favourite team is Australia"; <br>
+						break; <br>
+						<br>
+						default : <br>
+						echo "You dont like cricket"; <br>
+					} <br>
+						<br>
+						<b>Output  your favourite team is bangladesh</b> <br>
+						<hr> 
+						<br>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 	</div>
-
-
-
 </div>
 
-
 <?php
-$countryOne = array(
-	"name" => "Bangladesh",
-	"capital" => "dhaka"
-);
-$countryTwo = array(
-	"name" => "Bangladesh",
-	"capital" => "dhaka"
-);
-var_dump($countryOne === $countryTwo);
+$favcolor = "red";
 
-
-
-
+switch ($favcolor) {
+  case "red":
+    echo "Your favorite color is red!";
+    break;
+  case "blue":
+    echo "Your favorite color is blue!";
+    break;
+  case "green":
+    echo "Your favorite color is green!";
+    break;
+  default:
+    echo "Your favorite color is neither red, blue, nor green!";
+}
 ?>
 
+<?php 
+	$favTeam = "Bangladesh";
+	switch($favTeam){
+		case "Bangladesh":
+			echo "Your Favourite team is Bangladesh";
+			break;
+
+		case "India":
+			echo "Your favourite team is India";
+			break;
+
+		case "Australia":
+			echo "Your favourite team  is Australia";
+			break;
+
+			default :
+			echo "You dont like Cricket";
+	}
+
+?>
 
 
 
