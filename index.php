@@ -531,6 +531,40 @@
 				<b>Output: My favourite color is Purple </b> <br>
 				<hr> 
 				<br>
+				<h5 class="text-center">Real example with function</h5>
+				funciton sum($x, $y){ <br>
+					$z = $x + $y; <br>
+					return $z; <br>
+				} <br>
+				sum(10, 20); <br>
+				<b>Output = 10 + 20 = 30</b> <br>
+			</div>
+		</div>
+
+		<!----------------Array--------------->
+		<div class="mt-3 bg-primary">
+			<h4 class="text-center">Array</h4>
+			<div class="p-3">
+				<p>Array index start with 0. and </p>
+
+				$numbers = <mark> array(10, 20, 30, 40, 50, 50); </mark><br>
+				<span class="text-warning">	we can get total array length using count(numbers) function</span>
+				count($numbers); <br>
+				<b>output is 5</b> <br>
+				<span class="text-warning">Fixed position single array value</span> <br>
+				echo $numbers[3]; <br>
+				<b>output is 40</b> <br>
+				<br> 
+				<hr>
+				<h4>Arrary with for loop</h4>
+				$num = array(10, 20, 30, 40); <br>
+				$length = count($num); <br>
+				for($i=0; $i<$length; $i++){ <br/>
+					echo $num[$i]; <br/>
+				} <br>
+				<b>Output is 10, 20, 30, 40</b>
+			</div>
+			<div>
 
 			</div>
 		</div>
@@ -629,6 +663,25 @@ functionName();
 
 ?>
 
+<!---------------array length----------->
+<h2>Array Advanced</h2>
+<p>	$num = array(10, 20, 30, 40, 50);</p>
+	<?php 
+	$num = array(10, 20, 30, 40, 50);
+	$length = count($num);
+	$thid_position = $num[2];
+	echo "Toal length is ".$length.'<br/>';
+	echo "Thid positon is ".$thid_position;
+?>
+<h2>Array with for loop</h2>
+ <?php 
+	$x = array(10, 20, 30, 40, 50, 60, 60);
+	$length = count($x);
+	for($i =0; $i < $length; $i++){
+		echo $x[$i] .'<br/>';
+	}
+ 
+ ?>
 
 
 
