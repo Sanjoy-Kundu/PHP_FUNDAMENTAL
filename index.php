@@ -569,21 +569,92 @@
 			</div>
 		</div>
 
+		<!--------------assesitive array--------->
+		<div class="bg-info mt-2">
+			<h4>Assesitive Array</h4>
+			<div class="p-2">
+				<p>Assesitive array always write with key and value</p>
+				<p>key and value always written with string example: "name" => "Madaripur",</p>
+				$x = array( <br/>
+					"a" => "Madaripur", <br>
+					"b" => "Banglasesh" <br>
+				); <br>
+				$y = array( <br>
+				"c" => "Faridpur", <br>
+				"d" => "Banladesh" <br>
+				) ;<br>
 
+				$var_dump($x == $y); <br>
+				<b>Output will be false</b> <br><br>
 
+				<h5>Variable with same and same value</h5>
 
+				$m = array( <br>
+					"name" => "Sanjoy", <br>
+					"address" => "Dhaka" <br>
+				); <br>
+				$n = array( <br>
+					"name" => "Sanjoy", <br>
+					"address" => "Dhaka" <br>
+				) <br>
+				var_dump($m == $n) <br> <br>
+				<b>output will be true</b>
 
+			</div>
+		</div>
 
+		<!------------ indential operator ----------------> 
+		<div class="bg-danger mt-3">
+			<h5>Indential Operator ===</h5>
+			<p>indential operator ==(key + order + data's type will be equal)</p>
+			<div class="p-2">
+				$a = array( <br>
+					"name" => "Shipon", <br>
+					"title" => "Khan" <br>
+				) <br>
 
+				$b = array( <br>
+					"name" => "Shipon", <br>
+					"title" => "Khan" <br>
+				) <br>
+				var_dump($a === $b) <br>
+				<b>output will be true</b> <br> <br> <hr> <hr>
 
+				<h5>Indential Operator (===)</h5> <br>
+				$a = array( <br>
+					"name" => "Shipon", <br>
+					"lastName" => "Sardar" <br>
+				) <br>
 
+				$b = array( <br>
+					"name" => "Shipon", <br>
+					"lastName" => "Khan" <br>
+				) <br>
+				var_dump($a === $b) <br>
+				<b>output will be flase</b> <br> <br> <hr> <hr>
 
+				<h5>not Indential (!==)</h5> <br>
+				$a = array( <br>
+					"name" => "Shipon", <br>
+					"lastName" => "Sardar" <br>
+				) <br>
 
-
-
-		
-	</div>
+				$b = array( <br>
+					"name" => "Shipon", <br>
+					"lastName" => "Khan" <br>
+				) <br>
+				var_dump($a !== $b) <br>
+				<b>output will be true</b> <br> <br>
+			</div>
+		</div>
 </div>
+</div>
+
+
+
+
+
+
 
 <h2>Switch</h2>
 <?php 
@@ -683,6 +754,34 @@ functionName();
  
  ?>
 
+
+<!---------- assesitive arrat -------------->
+<?php 
+	$x = array(
+		"name" => "Madaripur",
+		"country" => "Banglasesh"
+	);
+	$y = array(
+		"name" => "Delli",
+		"country" => "India"
+	);
+
+	var_dump($x == $y);
+
+?>
+
+<?php 
+		$a = array( 
+					"name" => "Shipon", 
+					"title" => "Khan" 
+		);
+
+				$b = array( 
+					"name" => "Shipon", 
+					"title" => "Khan" 
+				) ;
+				var_dump($a === $b);
+?>
 
 
 
