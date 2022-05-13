@@ -650,6 +650,90 @@
 </div>
 </div>
 
+<!--------------------another card------------------->
+<div class="row row-cols-1 row-cols-md-3 g-4 container-fluid mt-4">
+  <div class="col">
+    <div class="card bg-info">
+		<!---------images----->
+      <div class="card-body">
+        <h5 class="card-title">Conditonal Statement</h5>
+        <p class="card-text">
+			$x = 10; <br>
+			if($x < 8 ) { <br>
+				echo " 8 is greater than true is not true"; <br>
+				 } else{ <br>
+					echo "8 is lower than 10" <br>
+				} <br>
+				<b>output 8 is lower than 10</b>
+		</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+	<!--------------images----------->
+      <div class="card-body bg-warning">
+        <h5 class="card-title">Conditional Statement</h5>
+        <p class="card-text">
+			$x = 30; <br>
+			if( $x > 10 ){ <br>
+				echo "30 is greater than 10"; <br>
+			}elseif( $x >40) { <br>
+				echo "30 is greater than 40"; <br>
+			} elseif($x > 50){ <br>
+			
+			echo "30 is greater than 50"; <br>
+		 } else{ <br>
+			echo "30 is bigger than 10"; <br>
+		} <br>
+		<b> output is 30 is bigger than 10</b>
+	</p>
+      </div>
+    </div>
+  </div>
+  <!------------sorting array----------->
+  <div class="col">
+    <div class="card">
+      <!-------images--------->
+      <div class="card-body bg-info">
+        <h5 class="card-title">Sorting Array</h5>
+        <p class="card-text">
+		<span class="text-danger">sorting array means form a to z serial maintain.</span> <br>
+		<span>first using sort function sort($variable name)</span> <br>
+		$name = array("Sumon", "Kiron", "Mala", "Babu", "Abul"); <br>
+		sort($name); <br>
+		<!--using for loop-->
+		for($i = 0; $i< 5; $i++){ <br>
+			echo $name[$i]; <br>
+			echo "break"; <br>
+		} <br>
+
+		</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card  bg-warning">
+      <!------------sorting array Dynamically------->
+      <div class="card-body">
+        <h5 class="card-title">Sorting Array Dynamically</h5>
+        <p class="card-text">
+			$countries = array("USA", "BAN", "IND", "SAU","KKR"); <br>
+			$length = count($countries); <br>
+			count($countries); <br>
+			for($i = 0; $i< $length; $i++){ <br>
+				echo $countries[$i]; <br>
+			} <br>
+			<b>output will given serially a, b, c .....</b> <br>
+		</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
 
 
 
@@ -784,6 +868,18 @@ functionName();
 ?>
 
 
+<!---------- array sort --------->
+<?php 
+	$names = array("Sumi", "munmun", "Kabul", "Abul", "hassan", "Babul");
+	sort($names);
+	for($i = 0; $i< 6; $i++){
+		echo $names[$i]."<br/>";
+	}
+
+?>
+
+<!-------------dynamic sorting------->
+	
 
 <!---------js link---------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
