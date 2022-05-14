@@ -730,6 +730,46 @@
     </div>
   </div>
 
+  <!-----------Numeric short number--------->
+  <div class="col">
+    <div class="card  bg-info">
+      <!------------sorting array Dynamically------->
+      <div class="card-body">
+        <h5 class="card-title">Numric Sort Array</h5>
+        <p class="card-text">
+		$number =  array(20, 30, 5, 15,30); <br>
+		sort($number); <br>
+		$length = count($number); <br>
+		for($i = 0; $i< $length; $i++){ <br>
+			echo $number[$i]; <br>
+		} <br>
+		<b>output is 5, 15, 20, 30 ..........</b>
+		</p>
+      </div>
+    </div>
+  </div>
+  <!-----------Numeric rsort number--------->
+  <div class="col">
+    <div class="card  bg-warning">
+      <div class="card-body">
+        <h5 class="card-title">Numric rsort Array</h5>
+		<!---------rsort means heighest value to lowest value ----->
+		<p>rsort means heights value to lowest value</p>
+        <p class="card-text">
+		$number =  array(20, 30, 5, 15,30); <br>
+		rsort($number); <br>
+		$length = count($number); <br>
+		for($i = 0; $i< $length; $i++){ <br>
+			echo $number[$i]; <br>
+		} <br>
+		<b>output is 30,20,15,5,3 ..........</b>
+		</p>
+      </div>
+    </div>
+  </div>
+
+  
+
 
 
 </div>
@@ -877,8 +917,27 @@ functionName();
 	}
 
 ?>
+<h4>Number sorting (sort)</h4>
+<!-------------number sorting------>
+<?php
+$number = array(5, 20, 3, 55, 42, 60);
+	sort($number);
+	$lenght = count($number);
+	for($i = 0; $i < $lenght; $i++){
+		echo $number[$i]."<br/>";
+	};
+?>
 
-<!-------------dynamic sorting------->
+<h4>Numeric rsort</h4>
+<?php 
+	$serino = array(2, 11, 55, 5, 10, 90);
+	rsort($serino);
+	$lenght = count($serino);
+	for($i = 0; $i< $lenght; $i++){
+		echo $serino[$i]."<br/>";
+	}
+
+?>
 	
 
 <!---------js link---------->
