@@ -767,18 +767,57 @@
       </div>
     </div>
   </div>
+  <!-----------Array sort Assesitive array--------->
+  <div class="col">
+    <div class="card  bg-info">
+      <div class="card-body">
+        <h5 class="card-title">Assesitive Arrray Sort(key value)</h5>
+		
+		<p>"key" => "value", "Rahim" => "30"</p>
+		<p>Only array can use foreach loop</p>
+		<h5>asort can use output key</h5>
+        <p class="card-text">
+			$ages = array("Rahim" => "20", "Karim" =>"22", "Simul" => "19", "Rubi" => "31"); <br>
+			asort($ages); <br>
+			foreach($ages as $name => $age){  <br>
+				echo "My age is ".$age ."My name is ".$name; <br>
+				 }  <br>
+				 <b>outut is my name is ... My age is ...</b>
+		</p>
+      </div>
+    </div>
+  </div>
+  <!-----------Array sort Assesitive array--------->
+  <div class="col">
+    <div class="card  bg-warning">
+      <div class="card-body">
+        <h5 class="card-title">Assesitive Arrray Sort(key value)</h5>
+		
+		<p>"key" => "value", "Rahim" => "30"</p>
+		<p>Only array can use foreach loop</p>
+		<h5>ksort can use output key</h5>
+        <p class="card-text">
+			$ages = array("Rahim" => "20", "Karim" =>"22", "Simul" => "19", "Rubi" => "31"); <br>
+			asort($ages); <br>
+			foreach($ages as $name => $age){  <br>
+				echo "My age is ".$age ."My name is ".$name; <br>
+				 }  <br>
+				 <b>outut is my name is ... My age is ...</b>
+		</p>
+      </div>
+    </div>
+  </div>
+
 
   
 
 
 
+
+
+
+
 </div>
-
-
-
-
-
-
 
 <h2>Switch</h2>
 <?php 
@@ -936,6 +975,27 @@ $number = array(5, 20, 3, 55, 42, 60);
 	for($i = 0; $i< $lenght; $i++){
 		echo $serino[$i]."<br/>";
 	}
+
+?>
+
+<!------------ array sort assesittive array --------------->
+<?php 
+	$ages = array("Rahim" =>"30", "Karim" => "20", "Shipon" => "11", "Rekha" => "15");
+	asort($ages);
+	foreach($ages as $name => $age){
+		echo "My name is ". $name . "My age is ".$age ."<br/>"; 
+	}
+?>
+
+<!--------------- ksort assesitive array ------------------>
+<?php 
+	$countries = array("Banglasesh" => "Dhaka", "India" =>"Delli", "Malayshia" =>"Kualampur");
+	ksort($countries);
+	foreach($countries as $name => $capital){
+		echo "My country is ".$name." My capital is ".$capital;
+	}
+
+
 
 ?>
 	
