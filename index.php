@@ -851,6 +851,37 @@
     </div>
   </div>
 
+  <!---------------_SERVER Variable----------->
+  <div class="col">
+    <div class="card  bg-primary text-dark">
+      <div class="card-body">
+        <h5 class="card-title">_SERVER Variable</h5>		
+		<h4 class="text-center">_SERVER VARIABLE</h4>
+		<p class="text-white">সার্ভার মুলত ব্যবহার করা হয় আমরা আউটপুট দেখার জন্য সার্ভার  সাইটে যাই। সেই server site এর location, path, address, ip address এবং কোন browser ব্যবহার করছি তা বের করার জন্য  $_server variable ব্যবহার করা হয়।</p> <br>
+		<ol>
+			<li>আমরা যে server কাজ করছি তার output দেখার জন্য  $_SEVER variable এর মধ্যে এটি লিখা হয়  echo $_SEVER["PHP_SLEF"]</li>
+			<li> <br>
+			আমরা যে server e output করছি তার address দেখার জন্য  $_SEVER variable এর মধ্যে এটি লিখা হয়  echo $_SEVER["SERVER_NAME"]
+			</li> <br>
+			<li>
+			আমরা যে browser e output করছি তার address দেখার জন্য  $_SEVER variable এর মধ্যে এটি লিখা হয়  echo $_SEVER["HTTP_USER_AGENT"]
+			</li> <br>
+			<li>
+			আমরা যে browser e output করছি তার ip address দেখার জন্য  $_SEVER variable এর মধ্যে এটি লিখা হয়  echo $_SEVER["SERVER_ADDR"]</li>
+		</ol>
+		<br>
+		<ol>
+			<li>echo $_SERVER["PHP_SELF"]</li>
+			<li>echo $_SERVER["SERVER_NAME"]</li>
+			<li>echo $_SERVER["HTTP_USER_AGENT"]</li>
+			<li>echo $_SERVER["SERVER_ADDR"]</li>
+		</ol>
+	
+	
+      </div>
+    </div>
+  </div>
+
 
   
 
@@ -1020,7 +1051,7 @@ $number = array(5, 20, 3, 55, 42, 60);
 	}
 
 ?>
-
+<H4>Assesitive array Sort ASORT</H4>
 <!------------ array sort assesittive array --------------->
 <?php 
 	$ages = array("Rahim" =>"30", "Karim" => "20", "Shipon" => "11", "Rekha" => "15");
@@ -1031,6 +1062,7 @@ $number = array(5, 20, 3, 55, 42, 60);
 ?>
 
 <!--------------- ksort assesitive array ------------------>
+<h4>Assesitive Array KSORT</h4>
 <?php 
 	$countries = array("Banglasesh" => "Dhaka", "India" =>"Delli", "Malayshia" =>"Kualampur");
 	ksort($countries);
@@ -1040,6 +1072,7 @@ $number = array(5, 20, 3, 55, 42, 60);
 ?>
 
 <!--------------Global variable -------------->
+<h4>Global Variable</h4>
 <?php 
 	$x = 10;
 	$y = 20;
@@ -1048,7 +1081,21 @@ $number = array(5, 20, 3, 55, 42, 60);
 	};
 	addition();
 	echo "Total addition is ".$z;
+?>
 
+<h4>SERVER VARIABLE</h4>
+<?php
+echo "<h4>File location </h4>";
+	echo $_SERVER["PHP_SELF"];
+	echo"<br/>";
+	echo "<h4>Server Name </h4>";
+	echo $_SERVER["SERVER_NAME"];
+	echo"<br/>";
+	echo "<h4>BROWSER LOCATION </h4>";
+	echo $_SERVER["HTTP_USER_AGENT"];
+	echo "<br/>";
+	echo "<h4>BROWSER IP ADDRESS</h4>";
+	echo $_SERVER["SERVER_ADDR"];
 
 ?>
 	
