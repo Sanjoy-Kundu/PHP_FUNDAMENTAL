@@ -808,6 +808,49 @@
     </div>
   </div>
 
+  <!------------super global variable------------->
+  <div class="col">
+    <div class="card  bg-info">
+      <div class="card-body">
+        <h5 class="card-title">Super Global Variable</h5>
+		
+		<p>Mostly common super global variable are <span style="color:red">GLOBAL, _SERVER, _REQUEST, _POST, _GET, _FILE, _ENV, _SESSION, _COOKIE</span>. These are all building function on php. There are so many building function here.</p>
+		<ol>
+			<li>GLOBAL</li>
+			<li>_SERVER</li>
+			<li>_REQUEST</li>
+			<li>_POST</li>
+			<li>_GET</li>
+			<li>_FILE</li>
+			<li>_ENV</li>
+			<li>_SESSION</li>
+			<li>_COOKIE</li>
+		</ol>
+      </div>
+    </div>
+  </div>
+
+  <!---------------GLOBAL VARIABLE----------->
+  <div class="col">
+    <div class="card  bg-info">
+      <div class="card-body">
+        <h5 class="card-title">Super Globals Variable</h5>		
+		<h4 class="text-center">GLOBALS VARIABLE</h4>
+				<p>
+					$x = 10; <br>
+					$y = 20; <br>
+					function sum(){ <br>
+					$GLOBALS["z"] = $GLOBALS["x"] + $GLOBALS["y"]; <br>
+					 }  <br>
+						sum(); <br>
+						echo $z <br>
+				</p>
+	
+	
+      </div>
+    </div>
+  </div>
+
 
   
 
@@ -992,9 +1035,19 @@ $number = array(5, 20, 3, 55, 42, 60);
 	$countries = array("Banglasesh" => "Dhaka", "India" =>"Delli", "Malayshia" =>"Kualampur");
 	ksort($countries);
 	foreach($countries as $name => $capital){
-		echo "My country is ".$name." My capital is ".$capital;
+		echo "My country is ".$name." My capital is ".$capital ."<br/>";
 	}
+?>
 
+<!--------------Global variable -------------->
+<?php 
+	$x = 10;
+	$y = 20;
+	function addition(){
+		$GLOBALS["z"] = $GLOBALS["x"] + $GLOBALS["y"];
+	};
+	addition();
+	echo "Total addition is ".$z;
 
 
 ?>
